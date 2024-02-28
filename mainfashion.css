@@ -1,0 +1,93 @@
+/* -main */
+
+.main{
+    border: 1px solid black;
+    width:95%;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    border: 1px solid black;
+}
+.sub-title{
+    border: 1px solid black;
+}
+
+
+/* -visual */
+.visual{
+    width:90%;
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+}
+/* ----first */
+
+.visual .first-p{
+    border:1px solid blue;
+    width:90%;
+}
+.visual .first-img{
+    width:80%;
+}
+
+/* ---second */
+.visual .second-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+.second-img{
+    border: 1px solid red;
+    width:95%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.second-img>img{
+    display: flex;
+}
+
+.second-img .left{
+    width:45%;
+    margin-top:30px;
+}
+.second-img .right{
+    width:45%;
+    margin-bottom:30px;
+}
+
+/* ---third */
+.visual .third-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+.third-img{
+    border: 1px solid red;
+    width:95%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.third-img>img{
+    display: flex;
+}
+
+.third-img .left{
+    width:40%;
+    margin-bottom:30px;
+}
+.third-img .right{
+    width:45%;
+    margin-top:30px;
+}
+
+
+/* -----fourth */
+.visual .fourth-p{
+    border:1px solid blue;
+    width:90%;
+}

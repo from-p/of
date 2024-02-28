@@ -1,0 +1,136 @@
+
+.main{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    margin: 70px 0;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
+
+  .swiper {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(218, 197, 171) ;
+    border: 1px solid rgb(144, 128, 107) ;
+    color: rgb(144, 128, 107) ;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  /* 슬라이드 이전 버튼의 색상을 변경합니다. */
+.swiper-button-prev {
+  color: rgb(202, 177, 144)!important; /* 색상을 여러분이 원하는 색상으로 바꿉니다. */
+}
+
+/* 슬라이드 다음 버튼의 색상을 변경합니다. */
+.swiper-button-next {
+  color:rgb(202, 177, 144)!important; /* 색상을 여러분이 원하는 색상으로 바꿉니다. */
+
+  /* !important 의 사용을 피하기위해서는 더 구체적인 선택자를 지정/작성할 것  */
+}
+.main .swiper-pagination {
+  display: none;
+}
+
+
+
+/*  ---------------------------------하위컨텐츠 */
+.sub{
+  /* border: 1px solid blue; */
+  width:1000px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 50px auto; /* Adjust margin for centering */
+}
+
+.sub .swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.sub .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap:10px;
+}
+
+.sub .swiper-slide a{
+  display: contents;
+}
+.sub .swiper-slide .con{
+  /* border: 1px solid red; */
+  background: rgb(218, 197, 171) ;
+  justify-content:space-evenly;
+  align-items: center;
+  border-radius: 25px;
+}
+.sub .swiper-slide .con p{
+  /* border: 1px solid black; */
+  text-align: left;
+  color: rgb(98 84 67);
+  font-size: 16px;
+}
+
+.sub .swiper-slide img {
+  display: block;
+  width: 27%;
+  object-fit: cover;
+}
+
+
+.sub .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color:rgb(255, 248, 238);
+  opacity: 1;
+  background: rgb(202, 177, 144);
+}
+
+.sub .swiper-pagination-bullet-active {
+  color: #fff;
+  background: rgb(164, 145, 123);
+}

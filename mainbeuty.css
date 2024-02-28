@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'MeshedDisplay-Thin';
+    src: url(font/MeshedDisplay-Thin.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'MeshedDisplay-ExtraLight';
+    src: url(font/MeshedDisplay-ExtraLight.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'JeonjuCraftMjB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftMjB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }  
+
+
+
+/* -----main */
+
+
+.main{
+    border: 1px solid black;
+    width:95%;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    border: 1px solid black;
+}
+.sub-title{
+    border: 1px solid black;
+}
+
+/* -visual */
+.visual{
+    width:90%;
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---first */
+
+.first-img{
+    border: 1px solid red;
+    width:95%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.first-img>img{
+    display: flex;
+    width: 30%;
+}
+
+.first-img .left{
+    margin-bottom:30px;
+}
+.first-img .right{
+    margin-top:30px;
+}
+
+.first-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+/* ------second */
+
+.second-img{
+    border: 1px solid red;
+    width:95%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.second-img>img{
+    display: flex;
+    width: 30%;
+}
+
+.second-img .left{
+    margin-top:30px;
+}
+.second-img .right{
+    margin-bottom:30px;
+}
+
+
+.second-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+/* -----third */
+
+.third-img{
+    width:60%;
+}
+
+.third-p{
+    border:1px solid blue;
+    /* width:90%; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----fourth */
+
+.fourth-p{
+    border:1px solid blue;
+    width:590px;
+}
+
+/* -----last */
+
+.last{
+    border: 1px solid red;
+    width:95%;
+    justify-content: space-evenly;
+}
+.last>img{
+    display: flex;
+}
+.last>p{
+    display: flex;
+}
+
+.last .last-img{
+    width:40%;
+}
+.last .last-p{
+    border:1px solid blue;
+    align-items: center;
+    justify-content: center;
+}
