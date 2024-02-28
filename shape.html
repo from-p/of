@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Shape of _</title>
+    <link rel="shortcut icon" href="images/sub-logo.png">
+    <link rel="stylesheet" href="shape.css">
+    <script src="js/shape.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="header flex">
+    <div class="header-logo flex">
+        <a href="shape.html"><img src="images/logo4.png" alt=""></a>
+    </div>
+
+    <ul class="top-menu flex">
+        <li><a href="magazine.html">magazine</a></li>
+        <li><a href="beauty.html">beauty</a></li>
+        <li><a href="fashion.html">fashion</a></li>
+        <li><a href="movie.html">arts & culture</a></li>
+    </ul>
+</div>
+    
+<div class="container">
+    <div class="large-image">
+      <a href="mainfashion.html"><img src="images/size/fashion4-3.jpg" alt="Large Image"></a>
+      <p class="image-description">Gucci Enigma : Decoding the Language of Fashion</p>
+    </div>
+    <div class="small-images">
+        <div class="small-image">
+            <a href="mainjewerly.html"><img src="images/size/jewerly12.jpg" alt="Image 1"></a>
+            <p class="image-description">Radiant Elegance</p>
+        </div>
+        <div class="small-image">
+            <a href="mainbeuty.html"><img src="images/size/perfume5-4.jpg" alt="Image 2"></a>
+            <p class="image-description">Timeless Chanel in a Bottle</p>
+        </div>
+        <div class="small-image">
+            <a href="mainpop.html"><img src="images/size/pop8-1.jpg" alt="Image 3"></a>
+            <p class="image-description">THE UNSEEN of scene</p>
+        </div>
+        <div class="small-image">
+            <a href="mainlife.html"><img src="images/pop/teayeon1.webp" alt="Image 4"></a>
+            <p class="image-description">To . X</p>
+        </div>
+    </div>
+</div>
+
+<ul class="sub-menu flex">
+    <li><a href="youtube.html">youtube</a></li>
+    <li><a href="runway.html">runway</a></li>
+    <li><a href="#">life</a></li>
+</ul>
+
+<!-- --footer -->
+<div class="footer flex">
+    <a href="shape.html">
+        <img src="images/logo4.png" alt="">
+    </a>
+
+    <ul class="last-sub flex">
+        <li class="border"><a href="#">정기구독</a></li>
+        <li class="border"><a href="#">회사소개</a></li>
+        <li class="border"><a href="#">광고/제휴</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+    </ul>
+
+    <p class="last-text">Shapeof.CO.KR is OPERATED by DoDREAM</p>
+</div>
+
+<!-- ------------------mobile -->
+<div class="mobile flex">
+
+    <div class="m-header flex">
+        <div class="m-header-logo flex">
+            <a href="shape.html"><img src="images/logo4.png" alt=""></a>
+        </div>
+        
+        <ul class="m-menu flex">
+            <li><a href="#">beauty</a></li>
+            <li><a href="#">fashion</a></li>
+            <li><a href="#">arts & culture</a></li>
+            <li><a href="#">youtube</a></li>
+            <li><a href="#">runway</a></li>
+            <li><a href="#">life</a></li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+    const smallImages = document.querySelectorAll('.small-image');
+    const largeImage = document.querySelector('.large-image img');
+    const imageDescription = document.querySelector('.image-description');
+        
+    let hoverTimeout;
+    let isHovered = false;
+        
+    smallImages.forEach((smallImage) => {
+        smallImage.addEventListener('mouseover', () => {
+            clearTimeout(hoverTimeout); // Clear any previous timeouts
+            isHovered = true;
+            const smallImageSrc = smallImage.querySelector('img').getAttribute('src');
+            const description = smallImage.querySelector('.image-description').textContent;
+        
+            // 이미지 및 텍스트 변경을 1초(1000ms)로 지연시킵니다.
+            setTimeout(function() {
+                largeImage.style.transition = "opacity 0.3s"; // 투명도 전이를 추가
+                largeImage.style.opacity = 0; // 투명하게 만들기
+        
+                setTimeout(function() {
+                    largeImage.setAttribute('src', smallImageSrc);
+                    imageDescription.textContent = description;
+                    largeImage.style.opacity = 1; // 다시 불투명하게 만들기
+                }, 300); // 0.3초 지연
+        
+            }, 300); // 0.3초 지연
+        });
+        
+        smallImage.addEventListener('mouseout', () => {
+            isHovered = false;
+            hoverTimeout = setTimeout(function() {
+                if (!isHovered) {
+                    // Delay displaying default description when mouse leaves
+                    largeImage.style.opacity = 0;
+                    imageDescription.style.opacity = 0;
+        
+                    setTimeout(function() {
+                        // Restore the default large image and description
+                        largeImage.setAttribute('src', 'images/size/fashion4-3.jpg');
+                        imageDescription.innerHTML = 'Gucci Enigma : Decoding the Language of Fashion';
+                        largeImage.style.opacity = 1; // 다시 불투명하게 만들기
+                        imageDescription.style.opacity = 1; // Make description visible smoothly
+                    }, 300); // 0.3초 지연
+                }
+            }, 300); // 0.3초 delay before hiding description
+        });
+    });
+});
+
+</script>
+
+
+
+</body>
+</html>

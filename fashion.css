@@ -1,0 +1,37 @@
+.main{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    margin: 50px 0;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 100%;
+    height: 40%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid red;
+    background: #fff;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+  }
+
+  .swiper-slide .con{
+    border: 1px solid green;
+    width:80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-slide .con img {
+    display: block;
+    width: 30%;
+    object-fit: cover;
+  }
