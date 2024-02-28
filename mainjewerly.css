@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'MeshedDisplay-Thin';
+    src: url(font/MeshedDisplay-Thin.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'MeshedDisplay-ExtraLight';
+    src: url(font/MeshedDisplay-ExtraLight.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'JeonjuCraftMjB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftMjB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* -main */
+
+.main{
+    border: 1px solid black;
+    width:90%;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    border: 1px solid black;
+}
+.sub-title{
+    border: 1px solid black;
+}
+
+/* --visual */
+.visual{
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+
+/* ------first */
+
+.first-img{
+    border: 1px solid red;
+    width:85%;
+    justify-content: center;
+}
+
+.first-img>img{
+    display: flex;
+    width:40%;
+}
+
+.first-img .f{
+    margin-top: 8%;
+    margin-right: -5%;
+}
+.first-img .s{
+    margin-bottom: 8%;
+    margin-left: -5%;
+}
+
+.visual .first-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+
+/* ----secoond */
+.second-img{
+    width:50%;
+}
+.visual .second-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+/* -------third */
+
+.third-img{
+    border: 1px solid red;
+    width:90%;
+    justify-content: center;
+}
+
+.third-img>img{
+    display: flex;
+}
+
+.third-img .f{
+    width:50%;
+    margin-right: -22%;
+
+}
+.third-img .s{
+    height:220px;
+    margin-top: 25%;
+}
+
+/* ---last */
+.last-p{
+    border:1px solid blue;
+    width:90%;
+}

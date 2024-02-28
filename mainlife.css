@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'MeshedDisplay-Thin';
+    src: url(font/MeshedDisplay-Thin.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'MeshedDisplay-ExtraLight';
+    src: url(font/MeshedDisplay-ExtraLight.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'JeonjuCraftMjB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftMjB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* -main----- */
+.main{
+    border: 1px solid black;
+    width:90%;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    border: 1px solid black;
+}
+.sub-title{
+    border: 1px solid black;
+}
+
+/* -visual */
+.visual{
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+
+/* ----first */
+
+.first-img{
+    width:70%;
+}
+
+
+.first-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+/*----second  */
+
+
+.second-img{
+    border: 1px solid red;
+    width:50%;
+}
+
+.second-p{
+    border:1px solid blue;
+}
+
+
+/* ----third */
+
+.third-img{
+    border: 1px solid red;
+    width:70%;
+}
+
+.third-p{
+    border:1px solid blue;
+}
+
+/* ----fourth */
+.fourth-img{
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    gap:5px;
+}
+.fourth-img>img{
+    display: flex;
+    width:48%;
+}
+.fourth-p{
+    border:1px solid blue;
+}
+
+/* --------five */
+
+.five-img{
+    width:70%;
+}
+.five-p{
+    border:1px solid blue;
+    width:90%;
+}
+
+
