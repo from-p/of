@@ -1,0 +1,34 @@
+.main{
+    width:100%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.main>div{
+    margin-bottom: 50px;
+    border:1px solid blue;
+    flex-direction: column;
+    align-items: center;
+    width:95%;
+}
+
+
+.title{
+    border-bottom: 1px solid red;
+    width:95%;
+}
+
+
+
+.video{
+    border: 1px solid blue;
+    gap:20px;
+    height:180px;
+}
+  
+.video iframe {
+    width:100%;
+    height:100%;
+}
