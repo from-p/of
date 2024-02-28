@@ -73,15 +73,15 @@
 /*  ---------------------------------하위컨텐츠 */
 .sub{
   /* border: 1px solid blue; */
-  width:1000px;
+  width:1200px;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   margin: 50px auto; /* Adjust margin for centering */
 }
 
 .sub .swiper{
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  height: 98%;
 }
 
 .sub .swiper-slide {
@@ -103,7 +103,7 @@
   background: rgb(218, 197, 171) ;
   justify-content:space-evenly;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 .sub .swiper-slide .con p{
   /* border: 1px solid black; */
